@@ -883,8 +883,8 @@ MonoBehaviour:
   winTextObject: {fileID: 1118635817}
   timer: 0
   Enemy: {fileID: 0}
-  sensX: 0
-  sensY: 0
+  sensX: 400
+  sensY: 400
   orientation: {fileID: 0}
 --- !u!114 &338796172
 MonoBehaviour:
@@ -1906,7 +1906,6 @@ GameObject:
   - component: {fileID: 961739751}
   - component: {fileID: 961739750}
   - component: {fileID: 961739754}
-  - component: {fileID: 961739755}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -2045,27 +2044,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   cameraPosition: {fileID: 226104784}
---- !u!114 &961739755
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 961739749}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a4f4c30338e3da340903925ad19f974d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  speed: 0
-  countText: {fileID: 0}
-  timeText: {fileID: 0}
-  winTextObject: {fileID: 0}
-  timer: 0
-  Enemy: {fileID: 0}
-  sensX: 400
-  sensY: 400
-  orientation: {fileID: 452125995}
+  player: {fileID: 338796166}
 --- !u!1 &970712515
 GameObject:
   m_ObjectHideFlags: 0
@@ -2199,14 +2178,14 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 975747885}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalRotation: {x: 0.38268343, y: -0, z: -0, w: 0.92387956}
+  m_LocalPosition: {x: 0, y: 6.76, z: -7.7}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 961739753}
   m_Father: {fileID: 0}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 45, y: 0, z: 0}
 --- !u!114 &975747887
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2219,7 +2198,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 705d249803df0b94192b28db9cab1c35, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  cameraPosition: {fileID: 0}
+  cameraPosition: {fileID: 226104784}
+  player: {fileID: 338796166}
 --- !u!1 &985379415
 GameObject:
   m_ObjectHideFlags: 0
